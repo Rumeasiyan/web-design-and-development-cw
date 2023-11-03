@@ -1,0 +1,324 @@
+/* Reference: W3Schools (no date). How To - right aligned Menu buttons. Available from: https://www.w3schools.com/howto/howto_css_topnav_right.asp [Accessed on March 6] */
+/* Navigation Bar */
+.parentnav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.navBar  {
+    background-color: #F4BB44;
+    padding-right: 20px;
+    padding-left: 20px;
+    padding-bottom : 5px;
+    margin-left: 50px;
+    margin-top: 50px;;
+    padding-top: 4px;
+    border-radius: 50px;
+    font-size: 25px;
+    width: 90px;
+    text-decoration: none;
+    float: left;
+    text-align: center;
+    transform: translateX(-50px);
+}
+
+
+.navLink {
+    color : black;
+    font-size: 13px;
+    font-weight: bold;
+    text-decoration: none;
+    text-align: top;
+}
+
+.navBar:hover {
+    background-color: wheat;
+}
+
+#logo {
+    background-color: transparent;
+    margin-right: 50px;
+    margin-top: 0px;
+    width: 50px;
+    height: 50px;
+}
+
+#logo img {
+    height: 125px;
+}
+
+h1 {
+    font-family: 'helvetica';
+    text-align: right;
+    color: #fdd784;
+    font-size: 150px;
+    margin-top: 2%;
+    margin-right: 5%;
+}
+
+h3 {
+    color: white;
+    font-family: 'Public Sans', sans-serif;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap');
+
+p {
+    font-family: 'Open Sans', sans-serif;
+    font-style: italic;
+}
+
+.navBarfunction {
+    background-color: transparent;
+    /* removing the background effect */
+    padding-right: 15px;
+    padding-left: 15px;
+    padding-bottom : 5px;
+    margin-left: 50px;
+    margin-top: 50px;;
+    padding-top: 4px;
+    margin-left: auto;
+    color: #fdd784;
+}
+
+
+#changefont {
+    width: 70px;
+    display: flex;
+    justify-content: flex-end;
+    font-style: normal;
+    cursor: pointer;
+    /* making the cursor to come as a pointer */
+}
+
+#changecolor {
+    margin-right: 20px;
+}
+
+/* creating color box */
+.colorbox {
+    display: inline-block;
+    width: 15px;
+    height: 15px;
+    cursor: pointer;
+    padding: 0;
+}
+
+#red {
+    background-color: #8B0000;
+}
+
+#white {
+    background-color: #2c3e50;
+}
+
+#random {
+    /* reference: https://blog.logrocket.com/advanced-effects-with-css-background-blend-modes-4b750198522a/ */
+    background: linear-gradient(red, transparent), linear-gradient(to top left, lime, transparent), linear-gradient(to top right, blue, transparent);
+	background-blend-mode: screen;
+}
+
+iframe {
+    display:inline-block;
+    width: 40%;
+}
+
+body {
+    background: linear-gradient(to bottom right, #8B0000, #000000);
+    /* gradiant effect */
+    overflow-x: hidden;
+    /* to remove the vertical scroll bar */
+}
+
+.oscarContainer {
+    background-image: url("../images/gallerybackgroundimage.jpg"); 
+    /* image link: https://wallpaperaccess.com/oscars-2020 */
+    background-size: cover;
+    background-position: top;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    /* make the background fixed */
+    height: 100vh;
+} 
+
+
+.galleryContainer {
+    position: relative;
+    max-width: 1300px;
+    margin: auto;
+    margin-top: 5%;
+    margin-bottom: 5%;
+    display: grid;
+    grid-template-rows: repeat(1, 1fr);
+    grid-template-columns: repeat(4, 1fr);
+    /* creating grid to show as a gallery */
+    grid-gap: 20px;
+}
+
+.movie-content {
+    position: relative;
+    display: inline-block;
+    /* to dispaly as a two coloumns */
+    margin-right: 20px;
+}
+
+.movies {
+    position: relative;
+}
+  
+.movies img {
+    max-width: 90%;
+    height: 90%;
+    transition: transform 0.3s ease-out;
+    /* adding a smooth transition */
+}
+
+.movies:hover img {
+    transform: scale(1.1);
+    /* increase the size of the image when hovering over it */
+    transition-duration: 1000ms;
+}
+
+.description {
+    display: none;
+    position: absolute;
+    width: auto;
+    height: 450px;
+    left: -12px;
+    right: 18px;
+    background-color: #F4BB44;
+    padding: 30px;
+    z-index: 1;
+    border: 10px;
+    border-style: solid;
+    border-color: #333333;
+    border-radius: 25px;
+    pointer-events: all;
+    /* to make the discription stay. */
+}
+
+.description p {
+    margin: 0;
+    font-size: 16px;
+    display: inline-block;
+    left: 60%;
+    width: 50%;
+}
+
+.heading {
+    font-weight: bold;
+    text-decoration: underline;
+    font-size: 26px;
+    color: #8B0000;
+    max-width: 400px;
+    overflow-wrap: break-word;
+    /* to break the word */
+}
+
+.description iframe {
+    width: 800px;
+    height: 450px;
+    border: 0;
+}
+
+.description .descriptionText {
+    margin: auto;
+    width: 800px;
+    height: auto;
+    padding-left: 30px;
+}
+
+.movieContent:hover .description {
+    display:grid;
+    grid-template-columns: repeat(2, 1fr)
+}
+
+#smaller {
+    font-size: 13px;
+}
+
+#regular {
+    font-size: 23px;
+}
+
+#larger {
+    font-size: 33px;
+}
+
+/* The footer */
+
+footer {
+    position: absolute;
+    margin-bottom: 0;
+    background:#F4BB44;
+    height: auto;
+    width: 100%;
+    font-family: 'Open Sans', sans-serif;
+    padding-top: 40px;
+    padding-left:0px;
+    color: black;
+    z-index:-1; 
+}
+  
+.footerDetails {
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column; 
+}
+  
+.footerDetails p {
+    margin-top: -100px;
+    display: flex;
+    margin: 10px auto;
+    font-size: 14px;
+    font-family:monospace;
+    margin-bottom: -25px;
+    font-weight: bold; 
+    font-style: normal;
+    color:black;
+}
+ 
+.footerBtm {
+    text-align: center;
+    margin-top: 40px;
+    width: 100%;
+    padding: 20px 0; 
+}
+ 
+ 
+ 
+.footerBtm p {
+    text-align: center;
+    font-size: 14px;
+    word-spacing: 2px;
+    color:black;
+    padding-bottom:20px;
+    font-family: 'Open Sans', sans-serif;
+    font-style: italic; 
+}
+ 
+.footerBtm span {
+    opacity: .5; 
+}
+ 
+.footerBtm a{
+    color: black;
+    text-decoration:none; 
+}
+ 
+.footerBtm a:hover{
+    background-color:#F4BB44;
+    color:#897f7f; 
+}
+ 
+/* logo */
+ 
+#footerLogo {
+    height: 300px;
+    width: 420px;
+    margin-top: -125px;
+    margin-bottom: -70px;
+}
